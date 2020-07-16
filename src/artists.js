@@ -674,12 +674,12 @@ const artists = [
                     "ternacional\nAuto-discriminación sin razón\nRacismo inminente muc" +
                     "ha corrupción\nMonte culebra\nMáquina de guerra\nDesplazamientos " +
                     "por intereses en la tierra\nSu tienda de pescado\nAgua por todo l" +
-                    "ado\nSe represa\nQue ni el discovery ha explotado\n\Hay minas lle" +
-                    "nas de oro y platino \nReyes en la biodiversidad \nBochinche entr" +
-                    "e todos los vecinos \nY en deporte ni hablar \n\nDe donde vengo y" +
-                    "o \nYa cosa no es fácil pero siempre igual sobrevivimos \nVengo y" +
-                    "o \nDe tanto luchar siempre con la nuestra nos salimos \nVengo yo" +
-                    " \nY aquí se habla mal pero todo está mucho mejor \nVengo yo \nTe" +
+                    "ado\nSe represa\nQue ni el discovery ha explotado\nHay minas llen" +
+                    "as de oro y platino \nReyes en la biodiversidad \nBochinche entre" +
+                    " todos los vecinos \nY en deporte ni hablar \n\nDe donde vengo yo" +
+                    " \nYa cosa no es fácil pero siempre igual sobrevivimos \nVengo yo" +
+                    " \nDe tanto luchar siempre con la nuestra nos salimos \nVengo yo" +
+                    "\nY aquí se habla mal pero todo está mucho mejor \nVengo yo \nTe" +
                     "nemos la lluvia el frio el calor",
                 "difficulty": 3
             },
