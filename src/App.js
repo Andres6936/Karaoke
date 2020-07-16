@@ -1,6 +1,13 @@
 import React, {Component} from 'react';
+import {artists} from './artists';
 
 export default class App extends Component {
+
+    constructor(props) {
+        super(props);
+        this.data = artists;
+    }
+
 
     render() {
         return (
@@ -32,7 +39,7 @@ export default class App extends Component {
                                 </form>
                             </section>
                             <section>
-
+                                <img className="img-thumbnail" src={this.data[0].img} />
                             </section>
                             <section>
                                 <form className="form-inline">
