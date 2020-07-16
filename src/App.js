@@ -13,7 +13,7 @@ export default class App extends Component {
     render() {
         return (
             <div className="container-fluid">
-                <div className="col-lg-8 offset-lg-2 mt-5">
+                <div className="col-lg-6 offset-lg-3 mt-5">
                     <PanelSuperior data={this.data}/>
                     <PanelInferior/>
                 </div>

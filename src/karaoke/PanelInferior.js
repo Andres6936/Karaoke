@@ -4,12 +4,12 @@ export class PanelInferior extends Component {
 
     render() {
         return <div className="row row-cols-2">
-            <section className="col col-8">
+            <section className="col col-6">
                 <header className="col-12">
                     <h4 className="text-muted">List of Play</h4>
                 </header>
             </section>
-            <section className="col col-4">
+            <section className="col col-6">
                 <header className="col-12">
                     <h4 className="text-muted">Options List of Play</h4>
                 </header>
