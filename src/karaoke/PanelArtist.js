@@ -32,12 +32,12 @@ export class PanelArtist extends Component {
                 <img className="mx-auto border p-1" height="400px" src={this.props.data[0].img} alt="Photo"/>
             </section>
 
-            <section>
-                <form className="form-inline">
-                    <select className="form-control">
+            <section className="row mx-2">
+                <form className="col-12 form-inline">
+                    <select className="col-5 form-control">
                         <option>Highway to Hell</option>
                     </select>
-                    <button className="btn btn-primary" type="submit">Add Track</button>
+                    <button className="offset-1 col-5 btn btn-primary" type="submit">Add Track</button>
                 </form>
             </section>
         </div>
