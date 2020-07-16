@@ -9,7 +9,7 @@ export class PanelInferior extends Component {
                 <Title title="List of Play"/>
             </section>
 
-            <section className="col col-6">
+            <section className="col col-6 bg-light border p-2">
                 <Title title="Options List of Play"/>
 
                 <div className="btn-group col-12">
