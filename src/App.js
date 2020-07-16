@@ -39,7 +39,7 @@ export default class App extends Component {
                                 </form>
                             </section>
                             <section>
-                                <img className="img-thumbnail" src={this.data[0].img} />
+                                <img className="img-thumbnail" src={this.data[0].img} alt="Photo"/>
                             </section>
                             <section>
                                 <form className="form-inline">
