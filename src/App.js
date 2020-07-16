@@ -39,7 +39,7 @@ export default class App extends Component {
                                     <select className="form-control">
                                         <option>Highway to Hell</option>
                                     </select>
-                                    <button className="btn btn-block" type="submit">Add Track</button>
+                                    <button className="btn btn-primary" type="submit">Add Track</button>
                                 </form>
                             </section>
                         </div>
