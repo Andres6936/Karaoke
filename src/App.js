@@ -38,7 +38,7 @@ export default class App extends Component {
                                 </form>
                             </section>
                             <section>
-                                <img className="img-thumbnail" src={this.data[0].img} alt="Photo"/>
+                                <img className="border p-1" height="400px" src={this.data[0].img} alt="Photo"/>
                             </section>
                             <section>
                                 <form className="form-inline">
@@ -83,6 +83,19 @@ export default class App extends Component {
 
                             </section>
                         </div>
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <section className="col col-8">
+                            <header><h1>List of Play</h1></header>
+                        </section>
+                        <section className="col col-4">
+                            <header><h1>Options List of Play</h1></header>
+
+                            <button className="btn btn-block">Add List</button>
+                            <button className="btn btn-block">Modify List</button>
+                            <button className="btn btn-block">Delete List</button>
+                        </section>
                     </div>
                 </div>
             </div>
