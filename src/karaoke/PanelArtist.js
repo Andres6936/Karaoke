@@ -1,12 +1,11 @@
 import React, {Component} from "react";
+import {Title} from "./Title";
 
 export class PanelArtist extends Component {
 
     render() {
         return <div className="col bg-light border p-2">
-            <header className="col-12">
-                <h4 className="text-muted border-bottom">Artists</h4>
-            </header>
+            <Title title="Artists"/>
 
             <section className="row mx-2">
                 <form className="col-6 form-inline">

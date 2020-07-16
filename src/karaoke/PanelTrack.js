@@ -1,12 +1,11 @@
 import React, {Component} from "react";
+import {Title} from "./Title";
 
 export class PanelTrack extends Component {
 
     render() {
-        return <div className="col">
-            <header className="col-12">
-                <h4 className="text-muted">Track</h4>
-            </header>
+        return <div className="col bg-light border p-2">
+            <Title title="Track"/>
 
             <section className="row">
                 <div className="col-12 form-inline mb-2">
