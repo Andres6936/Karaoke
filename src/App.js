@@ -93,13 +93,13 @@ export default class App extends Component {
                         </section>
                         <section className="col col-4">
                             <header className="col-12">
-                                <h1>Options List of Play</h1>
+                                <h4 className="text-muted">Options List of Play</h4>
                             </header>
 
                             <div className="btn-group col-12">
-                                <button className="btn btn-block btn-primary">Add List</button>
-                                <button className="btn btn-block btn-primary">Modify List</button>
-                                <button className="btn btn-block btn-danger">Delete List</button>
+                                <button className="btn btn-primary">Add List</button>
+                                <button className="btn btn-primary">Modify List</button>
+                                <button className="btn btn-danger">Delete List</button>
                             </div>
                         </section>
                     </div>
