@@ -14,8 +14,8 @@ export default class App extends Component {
                 <div className="col-lg-8 offset-lg-2">
                     <div className="row row-cols-2">
                         <div className="col">
-                            <header>
-                                <h1>Artists</h1>
+                            <header className="col-12">
+                                <h4 className="text-muted">Artists</h4>
                             </header>
 
                             <section className="row">
@@ -50,8 +50,8 @@ export default class App extends Component {
                             </section>
                         </div>
                         <div className="col">
-                            <header>
-                                <h1>Track</h1>
+                            <header className="col-12">
+                                <h4 className="text-muted">Track</h4>
                             </header>
 
                             <section className="row">
@@ -87,8 +87,8 @@ export default class App extends Component {
 
                     <div className="row row-cols-2">
                         <section className="col col-8">
-                            <header>
-                                <h1>List of Play</h1>
+                            <header className="col-12">
+                                <h4 className="text-muted">List of Play</h4>
                             </header>
                         </section>
                         <section className="col col-4">
