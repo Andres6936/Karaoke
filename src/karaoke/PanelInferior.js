@@ -5,7 +5,7 @@ export class PanelInferior extends Component {
 
     render() {
         return <div className="row row-cols-2">
-            <section className="col col-6">
+            <section className="col col-6 bg-light border p-2">
                 <Title title="List of Play"/>
             </section>
 
