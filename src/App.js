@@ -11,11 +11,11 @@ export default class App extends Component {
     render() {
         return (
             <div className="container-fluid">
-                <div className="col-lg-8 offset-lg-2">
+                <div className="col-lg-8 offset-lg-2 mt-5">
                     <div className="row row-cols-2">
-                        <div className="col">
+                        <div className="col bg-light border p-2">
                             <header className="col-12">
-                                <h4 className="text-muted">Artists</h4>
+                                <h4 className="text-muted border-bottom">Artists</h4>
                             </header>
 
                             <section className="row">
@@ -37,8 +37,8 @@ export default class App extends Component {
                                     </select>
                                 </form>
                             </section>
-                            <section>
-                                <img className="border p-1" height="400px" src={this.data[0].img} alt="Photo"/>
+                            <section className="row my-4" >
+                                <img className="mx-auto border p-1" height="400px" src={this.data[0].img} alt="Photo"/>
                             </section>
                             <section>
                                 <form className="form-inline">
