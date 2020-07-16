@@ -36,12 +36,17 @@ export default class App extends Component {
 
                             </section>
                             <section>
-
+                                <form className="form-inline">
+                                    <select className="form-control">
+                                        <option>Highway to Hell</option>
+                                    </select>
+                                    <button className="btn btn-block" type="submit">Add Track</button>
+                                </form>
                             </section>
                         </div>
                         <div className="col">
                             <header>
-                                <h1>Sings</h1>
+                                <h1>Track</h1>
                             </header>
                         </div>
                     </div>
