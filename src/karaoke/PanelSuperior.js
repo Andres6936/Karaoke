@@ -1,45 +1,12 @@
 import React, {Component} from "react";
+import {PanelArtist} from "./PanelArtist";
 
 export class PanelSuperior extends Component {
 
     render() {
         return <div className="row row-cols-2">
-            <div className="col bg-light border p-2">
-                <header className="col-12">
-                    <h4 className="text-muted border-bottom">Artists</h4>
-                </header>
+            <PanelArtist data={this.props.data}/>
 
-                <section className="row">
-                    <form className="col-6 form-inline">
-                        <label>Categories</label>
-                        <select className="form-control">
-                            <option>Bachata</option>
-                            <option>Salsa</option>
-                            <option>Rock</option>
-                        </select>
-                    </form>
-
-                    <form className="col-6 form-inline">
-                        <label>Artists</label>
-                        <select className="form-control">
-                            <option>AC/DC</option>
-                            <option>Romeo</option>
-                            <option>J. Balvin</option>
-                        </select>
-                    </form>
-                </section>
-                <section className="row my-4" >
-                    <img className="mx-auto border p-1" height="400px" src={this.props.data[0].img} alt="Photo"/>
-                </section>
-                <section>
-                    <form className="form-inline">
-                        <select className="form-control">
-                            <option>Highway to Hell</option>
-                        </select>
-                        <button className="btn btn-primary" type="submit">Add Track</button>
-                    </form>
-                </section>
-            </div>
             <div className="col">
                 <header className="col-12">
                     <h4 className="text-muted">Track</h4>
