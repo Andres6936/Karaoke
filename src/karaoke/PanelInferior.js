@@ -1,18 +1,16 @@
 import React, {Component} from "react";
+import {Title} from "./Title";
 
 export class PanelInferior extends Component {
 
     render() {
         return <div className="row row-cols-2">
             <section className="col col-6">
-                <header className="col-12">
-                    <h4 className="text-muted">List of Play</h4>
-                </header>
+                <Title title="List of Play"/>
             </section>
+
             <section className="col col-6">
-                <header className="col-12">
-                    <h4 className="text-muted">Options List of Play</h4>
-                </header>
+                <Title title="Options List of Play"/>
 
                 <div className="btn-group col-12">
                     <button className="btn btn-primary">Add List</button>
