@@ -8,10 +8,10 @@ export class PanelArtist extends Component {
                 <h4 className="text-muted border-bottom">Artists</h4>
             </header>
 
-            <section className="row">
+            <section className="row mx-2">
                 <form className="col-6 form-inline">
-                    <label>Categories</label>
-                    <select className="form-control">
+                    <label className="col-6">Categories</label>
+                    <select className="col-6 form-control form-control-sm">
                         <option>Bachata</option>
                         <option>Salsa</option>
                         <option>Rock</option>
@@ -19,17 +19,19 @@ export class PanelArtist extends Component {
                 </form>
 
                 <form className="col-6 form-inline">
-                    <label>Artists</label>
-                    <select className="form-control">
+                    <label className="col-5">Artists</label>
+                    <select className="col-7 form-control form-control-sm">
                         <option>AC/DC</option>
                         <option>Romeo</option>
                         <option>J. Balvin</option>
                     </select>
                 </form>
             </section>
+
             <section className="row my-4" >
                 <img className="mx-auto border p-1" height="400px" src={this.props.data[0].img} alt="Photo"/>
             </section>
+
             <section>
                 <form className="form-inline">
                     <select className="form-control">
