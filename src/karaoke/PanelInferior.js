@@ -7,6 +7,19 @@ export class PanelInferior extends Component {
         return <div className="row row-cols-2">
             <section className="col col-6 bg-light border p-2">
                 <Title title="List of Play"/>
+
+                <table className="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">N° Tracks</th>
+                    </tr>
+
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
             </section>
 
             <section className="col col-6 bg-light border p-2">
