@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {Title} from "./Title";
+import {MenuOptions} from "./MenuOptions";
 
 export class PanelArtist extends Component {
 
@@ -17,14 +18,7 @@ export class PanelArtist extends Component {
                     </select>
                 </form>
 
-                <form className="col-6 form-inline">
-                    <label className="col-5">Artists</label>
-                    <select className="col-7 form-control form-control-sm">
-                        <option>AC/DC</option>
-                        <option>Romeo</option>
-                        <option>J. Balvin</option>
-                    </select>
-                </form>
+                <MenuOptions label="Artists" options={["AC/DC", "Romeo", "J. Balvin"]} />
             </section>
 
             <section className="row my-4" >
