@@ -4,24 +4,13 @@ import {MenuOptions} from "./MenuOptions";
 
 export class PanelArtist extends Component {
 
-    /**
-     * @returns {[string]} List with the names of artists.
-     */
-    filterArtist(){
-        let artists = [];
-        this.props.data.forEach(artist => {
-            artists.push(artist.name);
-        })
-        return artists;
-    }
-
     render() {
         return <div className="col bg-light border p-2">
             <Title title="Artists"/>
 
             <section className="row mx-2">
                 <MenuOptions label="Categories" options={["Bachata", "Sala", "Rock"]} />
-                <MenuOptions label="Artists" options={this.filterArtist()} />
+                <MenuOptions label="Artists" options={this.props.listArtists} />
             </section>
 
             <section className="row my-4" >
