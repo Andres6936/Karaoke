@@ -4,6 +4,9 @@ import {MenuOptions} from "./MenuOptions";
 
 export class PanelArtist extends Component {
 
+    /**
+     * @returns {[string]} List with the names of artists.
+     */
     filterArtist(){
         let artists = [];
         this.props.data.forEach(artist => {
