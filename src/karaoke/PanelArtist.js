@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {Title} from "./Title";
 import {MenuOptions} from "./MenuOptions";
+import {ListTracks} from "./ListTracks";
 
 export class PanelArtist extends Component {
 
@@ -18,12 +19,7 @@ export class PanelArtist extends Component {
             </section>
 
             <section className="row mx-2">
-                <form className="col-12 form-inline">
-                    <select className="col-5 form-control">
-                        <option>Highway to Hell</option>
-                    </select>
-                    <button className="offset-1 col-5 btn btn-primary" type="submit">Add Track</button>
-                </form>
+                <ListTracks listTracks={this.props.listTracks} />
             </section>
         </div>
     }

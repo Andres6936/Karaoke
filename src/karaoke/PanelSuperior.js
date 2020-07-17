@@ -15,9 +15,19 @@ export class PanelSuperior extends Component {
         return artists;
     }
 
+    /**
+     * @returns {[string]} List with the name of tracks.
+     */
+    filterTracks(){
+        let tracks = [];
+        this.props.data[0].tracks.forEach(track =>
+            tracks.push(track.name));
+        return tracks;
+    }
+
     render() {
         return <div className="row row-cols-2">
-            <PanelArtist listArtists={this.filterArtists()} data={this.props.data}/>
+            <PanelArtist listArtists={this.filterArtists()} listTracks={this.filterTracks()} data={this.props.data}/>
             <PanelTrack data={this.props.data}/>
         </div>
     }
