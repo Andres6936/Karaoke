@@ -4,13 +4,21 @@ import {MenuOptions} from "./MenuOptions";
 
 export class PanelArtist extends Component {
 
+    filterArtist(){
+        let artists = [];
+        this.props.data.forEach(artist => {
+            artists.push(artist.name);
+        })
+        return artists;
+    }
+
     render() {
         return <div className="col bg-light border p-2">
             <Title title="Artists"/>
 
             <section className="row mx-2">
                 <MenuOptions label="Categories" options={["Bachata", "Sala", "Rock"]} />
-                <MenuOptions label="Artists" options={["AC/DC", "Romeo", "J. Balvin"]} />
+                <MenuOptions label="Artists" options={this.filterArtist()} />
             </section>
 
             <section className="row my-4" >
