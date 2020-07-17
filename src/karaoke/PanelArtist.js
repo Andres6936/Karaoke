@@ -9,15 +9,7 @@ export class PanelArtist extends Component {
             <Title title="Artists"/>
 
             <section className="row mx-2">
-                <form className="col-6 form-inline">
-                    <label className="col-6">Categories</label>
-                    <select className="col-6 form-control form-control-sm">
-                        <option>Bachata</option>
-                        <option>Salsa</option>
-                        <option>Rock</option>
-                    </select>
-                </form>
-
+                <MenuOptions label="Categories" options={["Bachata", "Sala", "Rock"]} />
                 <MenuOptions label="Artists" options={["AC/DC", "Romeo", "J. Balvin"]} />
             </section>
 
