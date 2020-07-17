@@ -42,12 +42,25 @@ export class PanelSuperior extends Component {
         return this.props.data[this.state.currentArtist].img;
     }
 
+    /**
+     * @returns {{duration: number, difficulty: number, name: string, lyrics: string}}
+     *  Information of current track based in the current artist.
+     */
+    getInfoTrack(){
+        return {
+            name: this.props.data[this.state.currentArtist].tracks[this.state.currentTrack].name,
+            duration: this.props.data[this.state.currentArtist].tracks[this.state.currentTrack].duration,
+            difficulty: this.props.data[this.state.currentArtist].tracks[this.state.currentTrack].difficulty,
+            lyrics: this.props.data[this.state.currentArtist].tracks[this.state.currentTrack].lyrics,
+        }
+    }
+
     render() {
         return <div className="row row-cols-2">
             <PanelArtist listArtists={this.filterArtists()}
                          listTracks={this.filterTracks()}
                          image={this.getPathImage()}/>
-            <PanelTrack data={this.props.data}/>
+            <PanelTrack track={this.getInfoTrack()}/>
         </div>
     }
 }
