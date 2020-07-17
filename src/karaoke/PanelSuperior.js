@@ -25,21 +25,28 @@ export class PanelSuperior extends Component {
     }
 
     /**
-     * @param indexArtist {number} Index in the array of actual artists.
-     * @returns {[string]} List with the name of artist's track.
+     * @returns {[string]} List with the name of current artist's track.
      */
-    filterTracks(indexArtist){
+    filterTracks(){
         let tracks = [];
-        this.props.data[indexArtist].tracks.forEach(track =>
+        this.props.data[this.state.currentArtist].tracks.forEach(track =>
             tracks.push(track.name));
         return tracks;
+    }
+
+    /**
+     * @returns {string} Path to resource that represent the image
+     *  of current artist.
+     */
+    getPathImage(){
+        return this.props.data[this.state.currentArtist].img;
     }
 
     render() {
         return <div className="row row-cols-2">
             <PanelArtist listArtists={this.filterArtists()}
-                         listTracks={this.filterTracks(this.state.currentArtist)}
-                         image={this.props.data[this.state.currentArtist].img}/>
+                         listTracks={this.filterTracks()}
+                         image={this.getPathImage()}/>
             <PanelTrack data={this.props.data}/>
         </div>
     }
