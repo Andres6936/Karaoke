@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import PropTypes from 'prop-types';
 import {Title} from "./Title";
 import {LabelValue} from "./LabelValue";
 
@@ -21,4 +22,11 @@ export class PanelTrack extends Component {
             </section>
         </div>
     }
+}
+
+PanelTrack.propTypes = {
+    track: PropTypes.string,
+    duration: PropTypes.number,
+    difficulty: PropTypes.number,
+    lyrics: PropTypes.string,
 }
