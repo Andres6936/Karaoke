@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import PropTypes from 'prop-types';
 import {Title} from "./Title";
 import {MenuOptions} from "./MenuOptions";
 import {ListTracks} from "./ListTracks";
@@ -23,4 +24,10 @@ export class PanelArtist extends Component {
             </section>
         </div>
     }
+}
+
+PanelArtist.propType = {
+    listArtists: PropTypes.array,
+    listTracks: PropTypes.array,
+    image: PropTypes.string,
 }
