@@ -16,9 +16,7 @@ export class PanelTrack extends Component {
                 <LabelValue name="Gender" value="Comodin"/>
             </section>
             <section className="row p-4">
-                <textarea rows="10" className="col-12 bg-light border" readOnly={true}>
-                    {this.props.track.lyrics}
-                </textarea>
+                <textarea rows="10" className="col-12 bg-light border" readOnly={true} value={this.props.track.lyrics}/>
             </section>
         </div>
     }
