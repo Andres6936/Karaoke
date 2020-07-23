@@ -25,8 +25,10 @@ export class PanelTrack extends Component {
 }
 
 PanelTrack.propTypes = {
-    track: PropTypes.string,
-    duration: PropTypes.number,
-    difficulty: PropTypes.number,
-    lyrics: PropTypes.string,
+    track: PropTypes.exact({
+        name: PropTypes.string,
+        duration: PropTypes.number,
+        difficulty: PropTypes.number,
+        lyrics: PropTypes.string,
+    }),
 }
