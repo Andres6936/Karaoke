@@ -16,7 +16,7 @@ export class PanelArtist extends Component {
             </section>
 
             <section className="row my-4" >
-                <img className="mx-auto border p-1" height="400px" src={this.props.image} alt="Retract"/>
+                <img className="mx-auto border p-1" height="400px" width="300px" src={this.props.image} alt="Retract"/>
             </section>
 
             <section className="row mx-2">
