@@ -1,3 +1,7 @@
+/**
+ * Data use for the application
+ * @type {{img: string, name: string, tracks: [{duration: number, difficulty: number, name: string, lyrics: string}]}}
+ */
 const artists = [
     {
         "name": "Adele",
