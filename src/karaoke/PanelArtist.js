@@ -12,7 +12,7 @@ export class PanelArtist extends Component {
 
             <section className="row mx-2">
                 <MenuOptions label="Categories" options={["Bachata", "Sala", "Rock"]} />
-                <MenuOptions label="Artists" options={this.props.listArtists} />
+                <MenuOptions label="Artists" options={this.props.artists} />
             </section>
 
             <section className="row my-4" >
@@ -20,7 +20,7 @@ export class PanelArtist extends Component {
             </section>
 
             <section className="row mx-2">
-                <ListTracks listTracks={this.props.listTracks} />
+                <ListTracks listTracks={this.props.tracks} />
             </section>
         </div>
     }

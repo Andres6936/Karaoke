@@ -57,8 +57,8 @@ export class PanelSuperior extends Component {
 
     render() {
         return <div className="row row-cols-2">
-            <PanelArtist listArtists={this.filterArtists()}
-                         listTracks={this.filterTracks()}
+            <PanelArtist artists={this.filterArtists()}
+                         tracks={this.filterTracks()}
                          image={this.getPathImage()}/>
             <PanelTrack track={this.getInfoTrack()}/>
         </div>
