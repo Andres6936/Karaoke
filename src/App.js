@@ -62,6 +62,16 @@ export default class App extends Component {
             lyrics: this.data[this.state.currentArtist].tracks[this.state.currentTrack].lyrics,
         }
     }
+
+    nextArtist(){
+        // If it is the last artists in the list
+        if (this.state.currentArtist === this.data.length - 1) {
+            // Begin from zero (begin)
+            this.setState({currentArtist: 0});
+        } else {
+            this.setState({currentArtist: this.state.currentArtist + 1})
+        }
+    }
     
     render() {
         return (
@@ -69,7 +79,7 @@ export default class App extends Component {
                 <div className="col-lg-6 offset-lg-3 mt-5">
                     <PanelSuperior artists={this.filterArtists()} tracks={this.filterTracks()} image={this.getPathImage()} track={this.getInfoTrack()}/>
                     <PanelInferior/>
-                    <PanelOptions/>
+                    <PanelOptions nextArtist={this.nextArtist.bind(this)}/>
                 </div>
             </div>
         );

@@ -10,7 +10,7 @@ export class PanelOptions extends Component {
                 <button className="btn btn-secondary">Find</button>
                 <button className="btn btn-secondary">List Tracks</button>
                 <button className="btn btn-secondary">Option 1</button>
-                <button className="btn btn-secondary">Option 2</button>
+                <button className="btn btn-secondary" onClick={this.props.nextArtist}>Option 2</button>
             </div>
         </div>
     }
