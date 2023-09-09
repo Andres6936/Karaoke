@@ -5,6 +5,7 @@ import ChevronLeft from "../../icons/ChevronLeft";
 import ThreeDots from "../../icons/ThreeDots";
 import Soundwave from "../../icons/Soundwave";
 import Pause from "../../icons/Pause";
+import {useRouter} from "next/router";
 
 export async function getStaticProps({params}) {
     const track = await getTrackById(params.id);
@@ -24,6 +25,8 @@ export async function getStaticPaths() {
 }
 
 export default function Sing({track}) {
+    const router = useRouter()
+
     return (
         <main className={"flex flex:col min-h:100vh"}>
             <section
@@ -34,7 +37,7 @@ export default function Sing({track}) {
                     <Pause size={68}/>
                 </div>
 
-                <div className={"position:absolute top:1rem left:1rem"}>
+                <div className={"position:absolute top:1rem left:1rem"} onClick={() => router.back()}>
                     <ChevronLeft size={24}/>
                 </div>
 
