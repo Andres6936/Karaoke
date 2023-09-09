@@ -1,4 +1,6 @@
 import {getAllTracksId, getTrackById, Track} from "../../lib/artists";
+import HandThumbsUp from "../../icons/HandThumbsUp";
+import Reply from "../../icons/Reply";
 
 export async function getStaticProps({params}) {
     const track = await getTrackById(params.id);
@@ -38,6 +40,30 @@ export default function Sing({track}) {
                         className={"w:8rem py:0.3rem r:1rem border:1px|solid|white bg:black color:white"}>
                         Follow
                     </button>
+                </article>
+
+                <article className={"position:relative flex flex:1 flex:col"}>
+                    <header>
+                        <h2>Comments 2</h2>
+                    </header>
+
+                    <div
+                        className={"flex flex:row justify-content:space-between align-items:center position:absolute left:0 right:0 bottom:0 gap:2rem"}>
+                        <input className={"flex flex:1 border:none r:1rem bg:#111111 py:0.5rem px:1rem color:white"}
+                               type="text" placeholder={"Comments are welcome!"}/>
+
+                        <div className={"flex flex:row gap:1rem"}>
+                            <div className={"flex flex:col justify-content:center align-items:center"}>
+                                <HandThumbsUp size={22}/>
+                                <span className={"font-size:0.8rem"}>12</span>
+                            </div>
+
+                            <div className={"flex flex:col justify-content:center align-items:center"}>
+                                <Reply size={22}/>
+                                <span className={"font-size:0.8rem"}>2</span>
+                            </div>
+                        </div>
+                    </div>
                 </article>
             </section>
         </main>
