@@ -1,5 +1,6 @@
 import {getTrackByArtist} from "../lib/artists";
 import TrendingSongs from "../components/TrendingSongs";
+import Search from "../icons/Search";
 
 export async function getStaticProps() {
     return {
@@ -15,7 +16,14 @@ export default function Index({tracks}) {
         <>
             <main className={"flex flex:col px:1rem py:1rem gap:1rem"}>
                 <section className={"flex flex:col"}>
-                    <input className={"bg:fade-88 border:none r:0.9rem px:0.5rem py:0.3rem"} type="text" placeholder={"Search"}/>
+                    <div className={"flex flex-basis:100% position:relative"}>
+                        <input className={"flex flex-basis:100% bg:fade-90 border:none r:0.9rem pl:2.3rem py:0.3rem color:fade-80::placeholder "} type="text"
+                               placeholder={"Search"}/>
+
+                        <div className={"position:absolute top:8 left:9 color:fade-80"}>
+                            <Search/>
+                        </div>
+                    </div>
                 </section>
 
                 <section className={"flex flex:col gap:1rem"}>
