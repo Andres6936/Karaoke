@@ -4,6 +4,7 @@ import Reply from "../../icons/Reply";
 import ChevronLeft from "../../icons/ChevronLeft";
 import ThreeDots from "../../icons/ThreeDots";
 import Soundwave from "../../icons/Soundwave";
+import Pause from "../../icons/Pause";
 
 export async function getStaticProps({params}) {
     const track = await getTrackById(params.id);
@@ -26,16 +27,20 @@ export default function Sing({track}) {
     return (
         <main className={"flex flex:col min-h:100vh"}>
             <section
-                className={`position:relative flex flex:5 flex-shrink:300 flex:col min-h:50% bg:black color:white bg:url('${track.image}') bg:cover bg:top`}>
-                <h1 className={"text:center mt:0.8rem"}>{track.name}</h1>
+                className={`content:'':before w:100%:before h:100%:before bd:brightness(45%):before position:absolute:before top:0:before position:relative flex flex:5 flex-shrink:300 flex:col min-h:50% bg:black color:white bg:url('${track.image}') bg:cover bg:top`}>
+                <h1 className={"position:absolute top:1rem left:0 right:0 text:center"}>{track.name}</h1>
+
+                <div  className={"position:absolute top:45% left:45%"}>
+                    <Pause size={68}/>
+                </div>
 
                 <div className={"position:absolute top:1rem left:1rem"}>
                     <ChevronLeft size={24}/>
                 </div>
 
                 <div className={"position:absolute bottom:1rem left:1rem flex flex:row"}>
-                    <span className={"font-weight:bold"}>03:37/</span>
-                    <span className={"font-weight:bold opacity:0.7"}>04:31</span>
+                    <span className={"font-size:1.2rem"}>03:37/</span>
+                    <span className={"font-size:1.2rem opacity:0.7"}>04:31</span>
                 </div>
 
                 <div className={"position:absolute top:1rem right:1rem"}>
