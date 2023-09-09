@@ -13,9 +13,9 @@ export async function getStaticProps() {
 export default function Index({tracks}) {
     return (
         <>
-            <main className={"flex flex:col px:1rem py:1rem"}>
+            <main className={"flex flex:col px:1rem py:1rem gap:1rem"}>
                 <section className={"flex flex:col"}>
-                    <span>Search</span>
+                    <input className={"bg:fade-88 border:none r:0.9rem px:0.5rem py:0.3rem"} type="text" placeholder={"Search"}/>
                 </section>
 
                 <section className={"flex flex:col gap:1rem"}>
@@ -37,7 +37,6 @@ export default function Index({tracks}) {
                             <div className={"w:7rem h:7rem bg:black r:1rem"}></div>
                         </div>
                     </article>
-
 
 
                     <article className={"flex flex:col gap:1rem"}>
