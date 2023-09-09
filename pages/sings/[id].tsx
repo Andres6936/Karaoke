@@ -1,6 +1,9 @@
 import {getAllTracksId, getTrackById, Track} from "../../lib/artists";
 import HandThumbsUp from "../../icons/HandThumbsUp";
 import Reply from "../../icons/Reply";
+import ChevronLeft from "../../icons/ChevronLeft";
+import ThreeDots from "../../icons/ThreeDots";
+import Soundwave from "../../icons/Soundwave";
 
 export async function getStaticProps({params}) {
     const track = await getTrackById(params.id);
@@ -23,7 +26,20 @@ export default function Sing({track}) {
     return (
         <main className={"flex flex:col min-h:100vh"}>
             <section
-                className={`flex flex:5 flex-shrink:300 flex:col min-h:50% bg:black bg:url('${track.image}') bg:cover bg:top`}>
+                className={`position:relative flex flex:5 flex-shrink:300 flex:col min-h:50% bg:black color:white bg:url('${track.image}') bg:cover bg:top`}>
+                <div className={"position:absolute top:1rem left:1rem"}>
+                    <ChevronLeft size={24}/>
+                </div>
+
+
+                <div className={"position:absolute top:1rem right:1rem"}>
+                    <ThreeDots size={24}/>
+                </div>
+
+
+                <div className={"position:absolute bottom:1rem right:1rem"}>
+                    <Soundwave size={24}/>
+                </div>
             </section>
 
             <section className={"position:relative flex flex:2 max-h:50% flex:col bg:black color:white px:1rem py:1rem gap:1rem"}>
