@@ -1,4 +1,16 @@
-export default function Index() {
+import {artists} from "../lib/artists";
+import TrendingSongs from "../components/TrendingSongs";
+
+export async function getStaticProps() {
+    return {
+        props: {
+            artists
+        }
+    }
+}
+
+
+export default function Index({artists}) {
     return (
         <>
             <main className={"flex flex:col px:1rem py:1rem"}>
@@ -58,35 +70,7 @@ export default function Index() {
                         </div>
                     </article>
 
-                    <div>
-                        <h3>Trending songs</h3>
-                    </div>
-
-                    <article className={"flex flex:col gap:1rem"}>
-                        <div className={"flex flex:row gap:1rem"}>
-                            <div className={"w:7rem h:7rem bg:black r:1rem"}></div>
-                            <div className={"flex flex:col"}>
-                                <h4>A Whole New World</h4>
-                                <p>Aladding - Soundtrack</p>
-                            </div>
-                        </div>
-
-                        <div className={"flex flex:row gap:1rem"}>
-                            <div className={"w:7rem h:7rem bg:black r:1rem"}></div>
-                            <div className={"flex flex:col"}>
-                                <h4>A Whole New World</h4>
-                                <p>Aladding - Soundtrack</p>
-                            </div>
-                        </div>
-
-                        <div className={"flex flex:row gap:1rem"}>
-                            <div className={"w:7rem h:7rem bg:black r:1rem"}></div>
-                            <div className={"flex flex:col"}>
-                                <h4>A Whole New World</h4>
-                                <p>Aladding - Soundtrack</p>
-                            </div>
-                        </div>
-                    </article>
+                    <TrendingSongs artists={artists}/>
                 </section>
             </main>
 
