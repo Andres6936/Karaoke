@@ -5,6 +5,7 @@ export type Artist = {
 }
 
 export type Track = {
+    id: string;
     name: string;
     duration: number;
     difficulty: number;
@@ -17,6 +18,7 @@ const artists: Artist[] = [
         "img": "/img/Adele.jpg",
         "tracks": [
             {
+                "id": "1",
                 "name": "Hello",
                 "duration": 295,
                 "lyrics": "Hello, it's me \nI was wondering if after all these years \n" +
@@ -49,6 +51,7 @@ const artists: Artist[] = [
                 "difficulty": 3
             },
             {
+                "id": "2",
                 "name": "Someone like you",
                 "duration": 285,
                 "lyrics": "I heard that your settled down \nThat you found a girl and y" +
@@ -82,6 +85,7 @@ const artists: Artist[] = [
                 "difficulty": 4
             },
             {
+                "id": "3",
                 "name": "Set fire to the rain",
                 "duration": 204,
                 "lyrics": "I let it fall, my heart \nAnd as it fell, you rose to claim " +
@@ -120,6 +124,7 @@ const artists: Artist[] = [
         "img": "/img/Rihanna-Fenty.png",
         "tracks": [
             {
+                "id": "4",
                 "name": "Work",
                 "duration": 219,
                 "lyrics": "Work, work, work, work, work, work \nYou see me I be \nWork," +
@@ -154,6 +159,7 @@ const artists: Artist[] = [
                 "difficulty": 7
             },
             {
+                "id": "5",
                 "name": "Diamonds",
                 "duration": 225,
                 "lyrics": "Shine bright like a diamond \nShine bright like a diamond \n" +
@@ -185,6 +191,7 @@ const artists: Artist[] = [
                 "difficulty": 5
             },
             {
+                "id": "6",
                 "name": "Umbrella",
                 "duration": 256,
                 "lyrics": "Gyeah, Rihanna \nGood Girl Gone Bad \nTake three, action \n\n" +
@@ -218,6 +225,7 @@ const artists: Artist[] = [
                 "difficulty": 6
             },
             {
+                "id": "7",
                 "name": "We found love",
                 "duration": 256,
                 "lyrics": "Yellow diamonds in the light \nAnd we're standing side by si" +
@@ -244,6 +252,7 @@ const artists: Artist[] = [
         "img": "/img/Michael-Jackson.jpg",
         "tracks": [
             {
+                "id": "8",
                 "name": "Smooth criminal",
                 "duration": 202,
                 "lyrics": "As he came into the window\nIt was the sound of a crescendo\n" +
@@ -277,6 +286,7 @@ const artists: Artist[] = [
                 "difficulty": 6
             },
             {
+                "id": "9",
                 "name": "Billie Jean",
                 "duration": 2009,
                 "lyrics": "She was more like a beauty queen from a movie \nI said don't" +
@@ -320,6 +330,7 @@ const artists: Artist[] = [
         "img": "/img/Green-Day.jpg",
         "tracks": [
             {
+                "id": "10",
                 "name": "American Idiot",
                 "duration": 161,
                 "lyrics": "Don't want to be an American idiot.\nDon't want a nation und" +
@@ -342,6 +353,7 @@ const artists: Artist[] = [
                 "difficulty": 7
             },
             {
+                "id": "11",
                 "name": "Basketcase",
                 "duration": 180,
                 "lyrics": "Do you have the time\nTo listen to me whine\nAbout nothing a" +
@@ -361,6 +373,7 @@ const artists: Artist[] = [
                 "difficulty": 6
             },
             {
+                "id": "12",
                 "name": "Boulevard of broken dreams",
                 "duration": 280,
                 "lyrics": "I walk a lonely road\nThe only one that I have ever known\nD" +
@@ -388,6 +401,7 @@ const artists: Artist[] = [
                 "difficulty": 4
             },
             {
+                "id": "13",
                 "name": "Holiday",
                 "duration": 221,
                 "lyrics": "Say, hey!\n\nHear the sound of the falling rain\nComing down" +
@@ -414,6 +428,7 @@ const artists: Artist[] = [
                 "difficulty": 5
             },
             {
+                "id": "14",
                 "name": "Wake me up when september ends",
                 "duration": 259,
                 "lyrics": "Summer has come and passed\nThe innocent can never last\nwak" +
@@ -440,6 +455,7 @@ const artists: Artist[] = [
         "img": "/img/AC-DC.jpeg",
         "tracks": [
             {
+                "id": "15",
                 "name": "Highway to hell",
                 "duration": 220,
                 "lyrics": "Living easy, living free \nSeason ticket on a one-way ride \n" +
@@ -457,6 +473,7 @@ const artists: Artist[] = [
                 "difficulty": 7
             },
             {
+                "id": "16",
                 "name": "Back in black",
                 "duration": 220,
                 "lyrics": "Back in black\nI hit the sack\nI've been too long I'm glad t" +
@@ -486,6 +503,7 @@ const artists: Artist[] = [
         "img": "/img/Calvin-Harris.jpg",
         "tracks": [
             {
+                "id": "17",
                 "name": "I need your love",
                 "duration": 106,
                 "lyrics": "I need your love\nI need your time \nWhen everything's wrong" +
@@ -516,6 +534,7 @@ const artists: Artist[] = [
                 "difficulty": 3
             },
             {
+                "id": "18",
                 "name": "Summer",
                 "duration": 191,
                 "lyrics": "When I met you in the summer\nTo my heartbeat sound\nWe fell" +
@@ -536,6 +555,7 @@ const artists: Artist[] = [
         "img": "/img/Bon.jpeg",
         "tracks": [
             {
+                "id": "19",
                 "name": "It's my life",
                 "duration": 106,
                 "lyrics": "This ain't a song for the brokenhearted\nNo silent prayer fo" +
@@ -560,6 +580,7 @@ const artists: Artist[] = [
                 "difficulty": 3
             },
             {
+                "id": "20",
                 "name": "Livin' on a prayer",
                 "duration": 191,
                 "lyrics": "Once upon a time \nNot so long ago \n\nTommy used to work on" +
@@ -581,6 +602,7 @@ const artists: Artist[] = [
                 "difficulty": 3
             },
             {
+                "id": "21",
                 "name": "You give love a bad name",
                 "duration": 191,
                 "lyrics": "Shot through the heart, and your to blame, darling \nYou giv" +
@@ -613,6 +635,7 @@ const artists: Artist[] = [
         "img": "/img/ChocQuibTown.jpeg",
         "tracks": [
             {
+                "id": "22",
                 "name": "De donde vengo yo",
                 "duration": 106,
                 "lyrics": "De donde vengo yo \nLa cosa no es fácil pero siempre igual " +
@@ -705,6 +728,7 @@ const artists: Artist[] = [
                 "difficulty": 3
             },
             {
+                "id": "23",
                 "name": "Hasta el techo",
                 "duration": 191,
                 "lyrics": "Oye.. \ncómo.. \noye.. \n\nMis días a tu lado nunca han sido" +
