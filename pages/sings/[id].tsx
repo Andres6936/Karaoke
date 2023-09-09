@@ -26,7 +26,7 @@ export default function Sing({track}) {
                 className={`flex flex:5 flex-shrink:300 flex:col min-h:50% bg:black bg:url('${track.image}') bg:cover bg:top`}>
             </section>
 
-            <section className={"flex flex:2 max-h:50% flex:col bg:black color:white px:1rem py:1rem gap:1rem"}>
+            <section className={"position:relative flex flex:2 max-h:50% flex:col bg:black color:white px:1rem py:1rem gap:1rem"}>
                 <article className={"flex flex:row align-items:center justify-content:space-between gap:1rem"}>
                     <div className={"flex flex:row align-items:center gap:1rem"}>
                         <div className={"w:2.5rem h:2.5rem bg:white r:50%"}></div>
@@ -105,6 +105,8 @@ export default function Sing({track}) {
                         </div>
                     </div>
                 </article>
+
+                <div className={"position:absolute right:15 bottom:85 w:4rem h:4rem bg:white r:50%"}></div>
             </section>
         </main>
 
