@@ -68,9 +68,11 @@ export default function Sing({track}) {
 
                         <div className={"flex flex:row align-items:center justify-content:space-between gap:1rem"}>
                             <div className={"flex flex:row align-items:center gap:1rem"}>
+                                <div className={"w:2.5rem h:2.5rem bg:transparent r:50%"}></div>
                                 <div className={"w:2.5rem h:2.5rem bg:white r:50%"}></div>
                                 <div className={"flex flex:col"}>
                                     <div className={"flex flex:row gap:0.5rem"}>
+                                        <h5 className={"lh:1.8 r:0.3rem px:0.3rem bg:sky-30 color:sky-80"}>Author</h5>
                                         <h4>Marks</h4>
                                         <span className={"opacity:0.7"}>2 hrs ago</span>
                                     </div>
