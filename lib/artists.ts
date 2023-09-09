@@ -799,11 +799,20 @@ export async function getAllTracksId() {
     })
 }
 
-export async function getTrackById(id: string) {
+export type TrackOfArtist = Track & {
+    artist: string,
+    image: string
+}
+
+export async function getTrackById(id: string): Promise<TrackOfArtist> {
     for (let artist of artists) {
         for (let track of artist.tracks) {
             if (track.id === id) {
-                return track
+                return {
+                    ...track,
+                    artist: artist.name,
+                    image: artist.img,
+                }
             }
         }
     }
