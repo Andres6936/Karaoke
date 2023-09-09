@@ -1,4 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Component} from 'react';
 import {artists} from './artists';
 import {PanelSuperior} from "./karaoke/PanelSuperior";
 import {PanelInferior} from "./karaoke/PanelInferior";
@@ -80,7 +82,7 @@ export default class App extends Component {
             this.setState({currentArtist: this.state.currentArtist + 1})
         }
     }
-    
+
     render() {
         return (
             <div className="container-fluid">

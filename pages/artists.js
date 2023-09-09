@@ -5,7 +5,7 @@
 const artists = [
     {
         "name": "Adele",
-        "img" : require("./img/Adele.jpg"),
+        "img" : "/img/Adele.jpg",
         "tracks": [
             {
                 "name": "Hello",
@@ -108,7 +108,7 @@ const artists = [
     },
     {
         "name": "Rihanna",
-        "img" : require("./img/Rihanna-Fenty.png"),
+        "img" : "/img/Rihanna-Fenty.png",
         "tracks": [
             {
                 "name": "Work",
@@ -232,7 +232,7 @@ const artists = [
     },
     {
         "name": "Michael Jackson",
-        "img" : require("./img/Michael-Jackson.jpg"),
+        "img" : "/img/Michael-Jackson.jpg",
         "tracks": [
             {
                 "name": "Smooth criminal",
@@ -308,7 +308,7 @@ const artists = [
     },
     {
         "name": "Green Day",
-        "img" : require("./img/Green-Day.jpg"),
+        "img" : "/img/Green-Day.jpg",
         "tracks": [
             {
                 "name": "American Idiot",
@@ -428,7 +428,7 @@ const artists = [
     },
     {
         "name": "AC/DC",
-        "img" : require("./img/AC-DC.jpeg"),
+        "img" : "/img/AC-DC.jpeg",
         "tracks": [
             {
                 "name": "Highway to hell",
@@ -474,7 +474,7 @@ const artists = [
     },
     {
         "name": "Calvin Harris",
-        "img" : require("./img/Calvin-Harris.jpg"),
+        "img" : "/img/Calvin-Harris.jpg",
         "tracks": [
             {
                 "name": "I need your love",
@@ -524,7 +524,7 @@ const artists = [
     },
     {
         "name": "Bon Jovi",
-        "img" : require("./img/Bon.jpeg"),
+        "img" : "/img/Bon.jpeg",
         "tracks": [
             {
                 "name": "It's my life",
@@ -601,7 +601,7 @@ const artists = [
     },
     {
         "name": "ChocQuibTown",
-        "img" : require("./img/ChocQuibTown.jpeg"),
+        "img" : "/img/ChocQuibTown.jpeg",
         "tracks": [
             {
                 "name": "De donde vengo yo",
