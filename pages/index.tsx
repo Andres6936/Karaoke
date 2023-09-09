@@ -92,7 +92,10 @@ export default function Index() {
 
             <nav className={"flex flex:row justify-content:between bg:white sticky bottom:0"}>
                 <div className={"flex flex:1 py:1rem align-items:end justify-content:center"}>
-                    <span>Home</span>
+                    <div className={"flex flex:col align-items:center justify-content:center"}>
+                        <div className={"w:1.5rem h:1.5rem r:50% bg:black"}></div>
+                        <span>Home</span>
+                    </div>
                 </div>
 
                 <div className={"flex flex:1 justify-content:center"}>
@@ -101,7 +104,10 @@ export default function Index() {
                 </div>
 
                 <div className={"flex flex:1 py:1rem align-items:end justify-content:center"}>
-                    <span>Profile</span>
+                    <div className={"flex flex:col align-items:center justify-content:center"}>
+                        <div className={"w:1.5rem h:1.5rem r:50% bg:black"}></div>
+                        <span>Profile</span>
+                    </div>
                 </div>
             </nav>
         </>
