@@ -1,16 +1,16 @@
-import {artists} from "../lib/artists";
+import {getTrackByArtist} from "../lib/artists";
 import TrendingSongs from "../components/TrendingSongs";
 
 export async function getStaticProps() {
     return {
         props: {
-            artists
+            tracks: await getTrackByArtist()
         }
     }
 }
 
 
-export default function Index({artists}) {
+export default function Index({tracks}) {
     return (
         <>
             <main className={"flex flex:col px:1rem py:1rem"}>
@@ -70,7 +70,7 @@ export default function Index({artists}) {
                         </div>
                     </article>
 
-                    <TrendingSongs artists={artists}/>
+                    <TrendingSongs tracks={tracks}/>
                 </section>
             </main>
 

@@ -744,4 +744,22 @@ const artists: Artist[] = [
     }
 ];
 
+export type TrackByArtist = {
+    artist: string;
+    track: string;
+}
+
+export async function getTrackByArtist(): Promise<TrackByArtist[]> {
+    const tracks: TrackByArtist[] = []
+    for (let artist of artists) {
+        for (let track of artist.tracks) {
+            tracks.push({
+                track: track.name,
+                artist: artist.name,
+            })
+        }
+    }
+    return tracks
+}
+
 export {artists};
