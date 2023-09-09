@@ -1,11 +1,20 @@
-/**
- * Data use for the application
- * @type {[{img: string, name: string, tracks: [{duration: number, difficulty: number, name: string, lyrics: string}]}]}
- */
-const artists = [
+export type Artist = {
+    img: string;
+    name: string;
+    tracks: Track[]
+}
+
+export type Track = {
+    name: string;
+    duration: number;
+    difficulty: number;
+    lyrics: string;
+}
+
+const artists: Artist[] = [
     {
         "name": "Adele",
-        "img" : "/img/Adele.jpg",
+        "img": "/img/Adele.jpg",
         "tracks": [
             {
                 "name": "Hello",
@@ -108,7 +117,7 @@ const artists = [
     },
     {
         "name": "Rihanna",
-        "img" : "/img/Rihanna-Fenty.png",
+        "img": "/img/Rihanna-Fenty.png",
         "tracks": [
             {
                 "name": "Work",
@@ -232,7 +241,7 @@ const artists = [
     },
     {
         "name": "Michael Jackson",
-        "img" : "/img/Michael-Jackson.jpg",
+        "img": "/img/Michael-Jackson.jpg",
         "tracks": [
             {
                 "name": "Smooth criminal",
@@ -308,7 +317,7 @@ const artists = [
     },
     {
         "name": "Green Day",
-        "img" : "/img/Green-Day.jpg",
+        "img": "/img/Green-Day.jpg",
         "tracks": [
             {
                 "name": "American Idiot",
@@ -428,7 +437,7 @@ const artists = [
     },
     {
         "name": "AC/DC",
-        "img" : "/img/AC-DC.jpeg",
+        "img": "/img/AC-DC.jpeg",
         "tracks": [
             {
                 "name": "Highway to hell",
@@ -474,7 +483,7 @@ const artists = [
     },
     {
         "name": "Calvin Harris",
-        "img" : "/img/Calvin-Harris.jpg",
+        "img": "/img/Calvin-Harris.jpg",
         "tracks": [
             {
                 "name": "I need your love",
@@ -524,7 +533,7 @@ const artists = [
     },
     {
         "name": "Bon Jovi",
-        "img" : "/img/Bon.jpeg",
+        "img": "/img/Bon.jpeg",
         "tracks": [
             {
                 "name": "It's my life",
@@ -601,7 +610,7 @@ const artists = [
     },
     {
         "name": "ChocQuibTown",
-        "img" : "/img/ChocQuibTown.jpeg",
+        "img": "/img/ChocQuibTown.jpeg",
         "tracks": [
             {
                 "name": "De donde vengo yo",

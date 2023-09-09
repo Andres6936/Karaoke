@@ -1,6 +1,6 @@
 import React from 'react';
 import {Component} from 'react';
-import {artists} from './artists';
+import {artists} from '../lib/artists';
 import {PanelSuperior} from "./karaoke/PanelSuperior";
 import {PanelInferior} from "./karaoke/PanelInferior";
 import {PanelOptions} from "./karaoke/PanelOptions";
