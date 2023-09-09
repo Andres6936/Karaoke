@@ -23,10 +23,10 @@ export default function Sing({track}) {
     return (
         <main className={"flex flex:col min-h:100vh"}>
             <section
-                className={`flex flex:5 flex-shrink:300 flex:col bg:black bg:url('${track.image}') bg:cover bg:top`}>
+                className={`flex flex:5 flex-shrink:300 flex:col min-h:50% bg:black bg:url('${track.image}') bg:cover bg:top`}>
             </section>
 
-            <section className={"flex flex:3 flex:col bg:black color:white px:1rem py:1rem gap:1rem"}>
+            <section className={"flex flex:2 max-h:50% flex:col bg:black color:white px:1rem py:1rem gap:1rem"}>
                 <article className={"flex flex:row align-items:center justify-content:space-between gap:1rem"}>
                     <div className={"flex flex:row align-items:center gap:1rem"}>
                         <div className={"w:2.5rem h:2.5rem bg:white r:50%"}></div>
@@ -47,7 +47,25 @@ export default function Sing({track}) {
                         <h2>Comments 2</h2>
                     </header>
 
-                    <div className={"flex flex:col"}>
+                    <div className={"flex flex:col gap:1rem"}>
+                        <div className={"flex flex:row align-items:center justify-content:space-between gap:1rem"}>
+                            <div className={"flex flex:row align-items:center gap:1rem"}>
+                                <div className={"w:2.5rem h:2.5rem bg:white r:50%"}></div>
+                                <div className={"flex flex:col"}>
+                                    <div className={"flex flex:row gap:0.5rem"}>
+                                        <h4>Marks</h4>
+                                        <span className={"opacity:0.7"}>2 hrs ago</span>
+                                    </div>
+                                    <p className={"font-size:0.9rem"}>OMG, that's beautiful</p>
+                                </div>
+                            </div>
+
+                            <div className={"flex flex:col justify-content:center align-items:center"}>
+                                <HandThumbsUp size={22}/>
+                                <span className={"font-size:0.8rem"}>2</span>
+                            </div>
+                        </div>
+
                         <div className={"flex flex:row align-items:center justify-content:space-between gap:1rem"}>
                             <div className={"flex flex:row align-items:center gap:1rem"}>
                                 <div className={"w:2.5rem h:2.5rem bg:white r:50%"}></div>
