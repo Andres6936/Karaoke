@@ -27,10 +27,16 @@ export default function Sing({track}) {
         <main className={"flex flex:col min-h:100vh"}>
             <section
                 className={`position:relative flex flex:5 flex-shrink:300 flex:col min-h:50% bg:black color:white bg:url('${track.image}') bg:cover bg:top`}>
+                <h1 className={"text:center mt:0.8rem"}>{track.name}</h1>
+
                 <div className={"position:absolute top:1rem left:1rem"}>
                     <ChevronLeft size={24}/>
                 </div>
 
+                <div className={"position:absolute bottom:1rem left:1rem flex flex:row"}>
+                    <span className={"font-weight:bold"}>03:37/</span>
+                    <span className={"font-weight:bold opacity:0.7"}>04:31</span>
+                </div>
 
                 <div className={"position:absolute top:1rem right:1rem"}>
                     <ThreeDots size={24}/>
