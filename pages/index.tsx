@@ -1,6 +1,7 @@
 import {getTrackByArtist} from "../lib/artists";
 import TrendingSongs from "../components/TrendingSongs";
 import Search from "../icons/Search";
+import Navigator from "../components/Navigator";
 
 export async function getStaticProps() {
     return {
@@ -27,12 +28,7 @@ export default function Index({tracks}) {
                 </section>
 
                 <section className={"flex flex:col gap:1rem"}>
-                    <nav className={"flex flex:row justify-content:between gap:1rem"}>
-                        <h3>Stage</h3>
-                        <h3>Following</h3>
-                        <h3>Recordings</h3>
-                        <h3>Songs</h3>
-                    </nav>
+                    <Navigator/>
 
                     <article className={"flex flex:col gap:1rem"}>
                         <header>
