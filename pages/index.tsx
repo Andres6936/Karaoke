@@ -6,7 +6,7 @@ export default function Index() {
                     <span>Search</span>
                 </section>
 
-                <section className={"flex flex:col"}>
+                <section className={"flex flex:col gap:1rem"}>
                     <nav className={"flex flex:row justify-content:between gap:1rem"}>
                         <h3>Stage</h3>
                         <h3>Following</h3>
@@ -14,21 +14,25 @@ export default function Index() {
                         <h3>Songs</h3>
                     </nav>
 
-                    <div>
-                        <h3>Following new records</h3>
-                    </div>
+                    <article className={"flex flex:col gap:1rem"}>
+                        <header>
+                            <h3>Following new records</h3>
+                        </header>
 
-                    <article className={"flex flex:row gap:1rem"}>
-                        <div className={"w:7rem h:7rem bg:black r:1rem"}></div>
-                        <div className={"w:7rem h:7rem bg:black r:1rem"}></div>
-                        <div className={"w:7rem h:7rem bg:black r:1rem"}></div>
+                        <div className={"flex flex:row gap:1rem"}>
+                            <div className={"w:7rem h:7rem bg:black r:1rem"}></div>
+                            <div className={"w:7rem h:7rem bg:black r:1rem"}></div>
+                            <div className={"w:7rem h:7rem bg:black r:1rem"}></div>
+                        </div>
                     </article>
 
-                    <div>
-                        <h3>Trending recordings</h3>
-                    </div>
+
 
                     <article className={"flex flex:col gap:1rem"}>
+                        <header>
+                            <h3>Trending recordings</h3>
+                        </header>
+
                         <div className={"flex flex:row gap:1rem"}>
                             <div className={"w:7rem h:7rem bg:black r:1rem"}></div>
                             <div className={"flex flex:col"}>
