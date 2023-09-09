@@ -53,6 +53,10 @@ export default function Sing({track}) {
                 </div>
             </section>
 
+            <div className={"h:0.1rem bg:black"}>
+                <div className={"position:relative h:0.1 bg:white w:70% content:'':after w:1rem:after h:1rem:after r:50%:after bg:white:after position:absolute:after top:-0.5rem:after right:-0.5rem:after z-index:99:after "}></div>
+            </div>
+
             <section className={"position:relative flex flex:2 max-h:50% flex:col bg:black color:white px:1rem py:1rem gap:1rem"}>
                 <article className={"flex flex:row align-items:center justify-content:space-between gap:1rem"}>
                     <div className={"flex flex:row align-items:center gap:1rem"}>
