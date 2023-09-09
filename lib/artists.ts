@@ -786,4 +786,29 @@ export async function getTrackByArtist(): Promise<TrackByArtist[]> {
     return tracks
 }
 
+export async function getAllTracksId() {
+    // Get the list of all the tracks independently of artist
+    const tracks = artists.map(artist => artist.tracks).flat();
+
+    return tracks.map(track => {
+        return {
+            params: {
+                id: track.id
+            }
+        }
+    })
+}
+
+export async function getTrackById(id: string) {
+    for (let artist of artists) {
+        for (let track of artist.tracks) {
+            if (track.id === id) {
+                return track
+            }
+        }
+    }
+
+    throw new Error("Track not found with id: " + id);
+}
+
 export {artists};
