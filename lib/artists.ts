@@ -769,6 +769,7 @@ const artists: Artist[] = [
 ];
 
 export type TrackByArtist = {
+    id: string;
     artist: string;
     track: string;
 }
@@ -778,6 +779,7 @@ export async function getTrackByArtist(): Promise<TrackByArtist[]> {
     for (let artist of artists) {
         for (let track of artist.tracks) {
             tracks.push({
+                id: track.id,
                 track: track.name,
                 artist: artist.name,
             })
