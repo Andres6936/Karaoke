@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import {Component} from 'react';
 import {artists} from './artists';
 import {PanelSuperior} from "./karaoke/PanelSuperior";
