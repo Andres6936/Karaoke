@@ -31,8 +31,9 @@ export default function Index({tracks}) {
                     <Navigator/>
 
                     <article className={"flex flex:col gap:1rem"}>
-                        <header>
+                        <header className={"flex flex:row justify-content:space-between align-items:center"}>
                             <h3>Following new records</h3>
+                            <span className={"bg:pink-58 color:white py:0.1rem px:0.7rem r:1rem"}>See all</span>
                         </header>
 
                         <div className={"flex flex:row gap:1rem"}>
@@ -44,8 +45,9 @@ export default function Index({tracks}) {
 
 
                     <article className={"flex flex:col gap:1rem"}>
-                        <header>
+                        <header className={"flex flex:row justify-content:space-between align-items:center"}>
                             <h3>Trending recordings</h3>
+                            <span className={"bg:pink-58 color:white py:0.1rem px:0.7rem r:1rem"}>See all</span>
                         </header>
 
                         <div className={"flex flex:row gap:1rem"}>
