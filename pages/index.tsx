@@ -3,6 +3,7 @@ import TrendingSongs from "../components/TrendingSongs";
 import Search from "../icons/Search";
 import Navigator from "../components/Navigator";
 import {BlurhashCanvas} from "react-blurhash";
+import BottomNavigator from "../components/BottomNavigator";
 
 export async function getStaticProps() {
     return {
@@ -112,26 +113,7 @@ export default function Index({tracks}) {
                 </section>
             </main>
 
-            <nav className={"flex flex:row justify-content:between bg:white sticky bottom:0"}>
-                <div className={"flex flex:1 py:1rem align-items:end justify-content:center"}>
-                    <div className={"flex flex:col align-items:center justify-content:center"}>
-                        <div className={"w:1.5rem h:1.5rem r:50% bg:black"}></div>
-                        <span>Home</span>
-                    </div>
-                </div>
-
-                <div className={"flex flex:1 justify-content:center"}>
-                    <div className={"w:5rem h:5rem r:50% bg:black translateY(-1.5rem)"}>
-                    </div>
-                </div>
-
-                <div className={"flex flex:1 py:1rem align-items:end justify-content:center"}>
-                    <div className={"flex flex:col align-items:center justify-content:center"}>
-                        <div className={"w:1.5rem h:1.5rem r:50% bg:black"}></div>
-                        <span>Profile</span>
-                    </div>
-                </div>
-            </nav>
+            <BottomNavigator/>
         </>
     )
 }
