@@ -2,6 +2,7 @@ import {getTrackByArtist} from "../lib/artists";
 import TrendingSongs from "../components/TrendingSongs";
 import Search from "../icons/Search";
 import Navigator from "../components/Navigator";
+import {BlurhashCanvas} from "react-blurhash";
 
 export async function getStaticProps() {
     return {
@@ -51,7 +52,12 @@ export default function Index({tracks}) {
                         </header>
 
                         <div className={"flex flex:row gap:1rem"}>
-                            <div className={"w:7rem h:7rem bg:black r:1rem"}></div>
+                            <div className={"position:relative w:7rem h:7rem"}>
+                                <BlurhashCanvas
+                                    className={"r:1rem position:absolute top:0 left:0 right:0 bottom:0 w:100% h:100%"}
+                                    hash="LEHV6nWB2yk8pyo0adR*.7kCMdnj"
+                                    punch={1} />
+                            </div>
                             <div className={"flex flex:col"}>
                                 <h4>A Whole New World</h4>
                                 <p>Aladding - Soundtrack</p>
@@ -59,7 +65,12 @@ export default function Index({tracks}) {
                         </div>
 
                         <div className={"flex flex:row gap:1rem"}>
-                            <div className={"w:7rem h:7rem bg:black r:1rem"}></div>
+                            <div className={"position:relative w:7rem h:7rem"}>
+                                <BlurhashCanvas
+                                    className={"r:1rem position:absolute top:0 left:0 right:0 bottom:0 w:100% h:100%"}
+                                    hash="U9EL:3-q8^MH}5M{wF-;00RPaJt-%%NLtnIU"
+                                    punch={1} />
+                            </div>
                             <div className={"flex flex:col"}>
                                 <h4>A Whole New World</h4>
                                 <p>Aladding - Soundtrack</p>
@@ -67,7 +78,12 @@ export default function Index({tracks}) {
                         </div>
 
                         <div className={"flex flex:row gap:1rem"}>
-                            <div className={"w:7rem h:7rem bg:black r:1rem"}></div>
+                            <div className={"position:relative w:7rem h:7rem"}>
+                                <BlurhashCanvas
+                                    className={"r:1rem position:absolute top:0 left:0 right:0 bottom:0 w:100% h:100%"}
+                                    hash="UvDd$%?;%IxsVxoetOoeScRlaPf$RlR+ayod"
+                                    punch={1} />
+                            </div>
                             <div className={"flex flex:col"}>
                                 <h4>A Whole New World</h4>
                                 <p>Aladding - Soundtrack</p>
