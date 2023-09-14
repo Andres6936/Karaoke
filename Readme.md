@@ -58,7 +58,11 @@ The application is required to allow:
 # Interfaz
 
 <p align="center">
-    <img src="docs/Interface.png" alt="GUI" />
+    <img src="./docs/Following.png" alt="GUI" width="414" />
+    <img src="./docs/Sing1.png" alt="GUI" width="414" />
+    <img src="./docs/Sing2.png" alt="GUI" width="414" />
+    <img src="./docs/Sing3.png" alt="GUI" width="414" />
+    <img src="./docs/Sing4.png" alt="GUI" width="414" />
 </p>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
