@@ -38,9 +38,26 @@ export default function Index({tracks}) {
                         </header>
 
                         <div className={"flex flex:row gap:1rem"}>
-                            <div className={"w:7rem h:7rem bg:black r:1rem"}></div>
-                            <div className={"w:7rem h:7rem bg:black r:1rem"}></div>
-                            <div className={"w:7rem h:7rem bg:black r:1rem"}></div>
+                            <div className={"position:relative w:7rem h:7rem"}>
+                                <BlurhashCanvas
+                                    className={"r:1rem position:absolute top:0 left:0 right:0 bottom:0 w:100% h:100%"}
+                                    hash="UpH-lVD*R*j[~WM{RjkCx]V@RjbbR,oLM{kC"
+                                    punch={1} />
+                            </div>
+
+                            <div className={"position:relative w:7rem h:7rem"}>
+                                <BlurhashCanvas
+                                    className={"r:1rem position:absolute top:0 left:0 right:0 bottom:0 w:100% h:100%"}
+                                    hash="UWHVCUM{GlD*?=S2Ji-Wu1NrrawOu1jFw5R%"
+                                    punch={1} />
+                            </div>
+
+                            <div className={"position:relative w:7rem h:7rem"}>
+                                <BlurhashCanvas
+                                    className={"r:1rem position:absolute top:0 left:0 right:0 bottom:0 w:100% h:100%"}
+                                    hash="UIGj:5Xn%K%M~BR*R*%2yBxu%2fk-To1ozW;"
+                                    punch={1} />
+                            </div>
                         </div>
                     </article>
 
