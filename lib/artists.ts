@@ -10,6 +10,7 @@ export type Track = {
     duration: number;
     difficulty: number;
     lyrics: string;
+    hash: string,
 }
 
 const artists: Artist[] = [
@@ -21,6 +22,7 @@ const artists: Artist[] = [
                 "id": "1",
                 "name": "Hello",
                 "duration": 295,
+                "hash": "UBF=m#8~uiIC0dD*-:E2_3rT%5$w0RK9^kxv",
                 "lyrics": "Hello, it's me \nI was wondering if after all these years \n" +
                     "You'd like to meet, to go over everything \nThey say that time's s" +
                     "upposed to heal ya \nBut I ain't done much healing\n \nHello, can " +
@@ -54,6 +56,7 @@ const artists: Artist[] = [
                 "id": "2",
                 "name": "Someone like you",
                 "duration": 285,
+                "hash": "U$FsMkoeV@Rj?wbHWBWB-=t7ofj[t8ogogof",
                 "lyrics": "I heard that your settled down \nThat you found a girl and y" +
                     "ou're married now \nI heard that your dreams came true \nGuess she" +
                     " gave you things I didn't give to you \n\nOld friend, why are you " +
@@ -88,6 +91,7 @@ const artists: Artist[] = [
                 "id": "3",
                 "name": "Set fire to the rain",
                 "duration": 204,
+                "hash": "UQEyxe?^%Ms=%5-Xt9W=%Lx]%MWV.8xvjGe:",
                 "lyrics": "I let it fall, my heart \nAnd as it fell, you rose to claim " +
                     "it \nIt was dark and I was over \nUntil you kissed my lips and you" +
                     " saved me \n  \nMy hands they were strong \nBut my knees were far " +
@@ -127,6 +131,7 @@ const artists: Artist[] = [
                 "id": "4",
                 "name": "Work",
                 "duration": 219,
+                "hash": "UmD^;Dx;oxVx?,odV]ah.4axWEoxxXahWXoe",
                 "lyrics": "Work, work, work, work, work, work \nYou see me I be \nWork," +
                     " work, work, work, work, work! \nYou see me do me \nDirt, dirt, di" +
                     "rt, dirt, dirt, dirt! \nFor some of that \nWork, work, work, work," +
@@ -162,6 +167,7 @@ const artists: Artist[] = [
                 "id": "5",
                 "name": "Diamonds",
                 "duration": 225,
+                "hash": "UPE.X|Sh0g-pIBE0I9%M_4ayV@ogSwt6M{xu",
                 "lyrics": "Shine bright like a diamond \nShine bright like a diamond \n" +
                     "\nFind light in the beautiful sea \nI choose to be happy \nYou and" +
                     " I, you and I \nWe're like diamonds in the sky \n\nYou're a shooti" +
@@ -194,6 +200,7 @@ const artists: Artist[] = [
                 "id": "6",
                 "name": "Umbrella",
                 "duration": 256,
+                "hash": "U6EAK0}E0g#mE2xZxZNH0gV[[qI;ApRj=Kxt",
                 "lyrics": "Gyeah, Rihanna \nGood Girl Gone Bad \nTake three, action \n\n" +
                     "No clouds in my storms \nLet it rain, I hydroplane into fame \nCom" +
                     "in' down like the Dow Jones \nWhen the clouds come, we gone \nWe R" +
@@ -228,6 +235,7 @@ const artists: Artist[] = [
                 "id": "7",
                 "name": "We found love",
                 "duration": 256,
+                "hash": "UEC}-0=}0%ag~C%3jbs:14kD=wj[I[W=I=Rl",
                 "lyrics": "Yellow diamonds in the light \nAnd we're standing side by si" +
                     "de \nAs your shadow crosses mine \nWhat it takes to come alive \n" +
                     "\nIt's the way I'm feeling  \nI just can't deny \nBut I've gotta l" +
@@ -255,6 +263,7 @@ const artists: Artist[] = [
                 "id": "8",
                 "name": "Smooth criminal",
                 "duration": 202,
+                "hash": "UACqrh=00g}sNbsURkV[0#sA=xEMf6xG^5%1",
                 "lyrics": "As he came into the window\nIt was the sound of a crescendo\n" +
                     "He came into her apartment\nHe left the bloodstains on the carpet\n" +
                     "\nShe ran underneath the table\nHe could see she was unable\nSo sh" +
@@ -289,6 +298,7 @@ const artists: Artist[] = [
                 "id": "9",
                 "name": "Billie Jean",
                 "duration": 2009,
+                "hash": "UEAR@f,s58w{}sr@EMs.EgR+s.j[9]X7%1S2",
                 "lyrics": "She was more like a beauty queen from a movie \nI said don't" +
                     " mind, but what do you mean I am the one\nWho will dance on the fl" +
                     "oor in the round\nShe said I am the one who will dance on the floo" +
@@ -333,6 +343,7 @@ const artists: Artist[] = [
                 "id": "10",
                 "name": "American Idiot",
                 "duration": 161,
+                "hash": "UFC53d,s5R^O}@xGNH$*OD%1xZI;WCxas:Ef",
                 "lyrics": "Don't want to be an American idiot.\nDon't want a nation und" +
                     "er the new media\nAnd can you hear the sound of hysteria?\nThe sub" +
                     "liminal mind fuck America.\n\nWelcome to a new kind of tension.\nA" +
@@ -356,6 +367,7 @@ const artists: Artist[] = [
                 "id": "11",
                 "name": "Basketcase",
                 "duration": 180,
+                "hash": "U8FrR~0003oc00u64:=wL200Elt,-pxDtlRP",
                 "lyrics": "Do you have the time\nTo listen to me whine\nAbout nothing a" +
                     "nd everything\nAll at once\nI am one of those\nMelodramatic fools\n" +
                     "Neurotic to the bone\nNo doubt about it\n\nSometimes I give myself" +
@@ -376,6 +388,7 @@ const artists: Artist[] = [
                 "id": "12",
                 "name": "Boulevard of broken dreams",
                 "duration": 280,
+                "hash": "UZHULcGW_4tR~WcC-qtRSxn*Sdn,X4ixNsi|",
                 "lyrics": "I walk a lonely road\nThe only one that I have ever known\nD" +
                     "on't know where it goes\nBut it's home to me and I walk alone\n\nI" +
                     " walk this empty street\nOn the Boulevard of Broken Dreams\nWhere " +
@@ -404,6 +417,7 @@ const artists: Artist[] = [
                 "id": "13",
                 "name": "Holiday",
                 "duration": 221,
+                "hash": "UQNQ43}^W?Onw^kpR*V[0KE0K0aN+drYX8XS",
                 "lyrics": "Say, hey!\n\nHear the sound of the falling rain\nComing down" +
                     " like an Armageddon flame (Hey!)\nThe shame\nThe ones who died wit" +
                     "hout a name\n\nHear the dogs howling out of key\nTo a hymn called " +
@@ -431,6 +445,7 @@ const artists: Artist[] = [
                 "id": "14",
                 "name": "Wake me up when september ends",
                 "duration": 259,
+                "hash": "UfNcmIj@%#xv?^j@njbbxun*M{W;RPR+fhs9",
                 "lyrics": "Summer has come and passed\nThe innocent can never last\nwak" +
                     "e me up when September ends\n\nlike my father's come to pass\nseve" +
                     "n years has gone so fast\nwake me up when September ends\n\nhere c" +
@@ -458,6 +473,7 @@ const artists: Artist[] = [
                 "id": "15",
                 "name": "Highway to hell",
                 "duration": 220,
+                "hash": "UHC6K80=5e=;9u=?AKR;%3NEs=NEI_bH%2V=",
                 "lyrics": "Living easy, living free \nSeason ticket on a one-way ride \n" +
                     "Asking nothing, leave me be \nTaking everything in my stride \nDon" +
                     "'t need reason, don't need rhyme\nAin't nothing \nI would rather d" +
@@ -476,6 +492,7 @@ const artists: Artist[] = [
                 "id": "16",
                 "name": "Back in black",
                 "duration": 220,
+                "hash": "U25XMu=|0gNa^jxaEMR*-BsoI;R*9uEMs-xZ",
                 "lyrics": "Back in black\nI hit the sack\nI've been too long I'm glad t" +
                     "o be back\nYes I'm, let loose\nFrom the noose\nThat's kept me hang" +
                     "ing about\nI keep looking at the sky\n'Cause it's gettin' me high\n" +
@@ -506,6 +523,7 @@ const artists: Artist[] = [
                 "id": "17",
                 "name": "I need your love",
                 "duration": 106,
+                "hash": "UDLL:KA00M4:JW5U9aE2~2xUNM={IBIpXntR",
                 "lyrics": "I need your love\nI need your time \nWhen everything's wrong" +
                     "\nYou make it right \nI feel so high \nI come alive \nI need to be" +
                     " free with you tonight \nI need your love \n\n[Beat break]\n \nI n" +
@@ -537,6 +555,7 @@ const artists: Artist[] = [
                 "id": "18",
                 "name": "Summer",
                 "duration": 191,
+                "hash": "U95=6ex|Dzi[xws,V=WFM^n#%MkYE1NHxaxV",
                 "lyrics": "When I met you in the summer\nTo my heartbeat sound\nWe fell" +
                     " in love\nAs the leaves turned brown\n\nAnd we could be together b" +
                     "aby\nAs long as skies are blue\nYou act so innocent now\nBut you l" +
@@ -558,6 +577,7 @@ const artists: Artist[] = [
                 "id": "19",
                 "name": "It's my life",
                 "duration": 106,
+                "hash": "UfMG#IxGocoz~qR*xuaf.9RjWBoLRkogogay",
                 "lyrics": "This ain't a song for the brokenhearted\nNo silent prayer fo" +
                     "r the faith departed\nAnd I ain't going to be just a face in the c" +
                     "rowd\nYou're going to hear my voice when I shout it out loud\n\nIt" +
@@ -583,6 +603,7 @@ const artists: Artist[] = [
                 "id": "20",
                 "name": "Livin' on a prayer",
                 "duration": 191,
+                "hash": "U27^=ANqE2Q:~ANIS$m-4.WTxZr=TK$eRhJV",
                 "lyrics": "Once upon a time \nNot so long ago \n\nTommy used to work on" +
                     " the docks \nUnion's been on strike \nHe's down on his luck...it's" +
                     " tough, so tough \nGina works the diner all day \nWorking for her " +
@@ -605,6 +626,7 @@ const artists: Artist[] = [
                 "id": "21",
                 "name": "You give love a bad name",
                 "duration": 191,
+                "hash": "UHJt;=EMRO%13G$xW=NG00I[t6r=4TxZNGkY",
                 "lyrics": "Shot through the heart, and your to blame, darling \nYou giv" +
                     "e love a bad name \n\nAn angel's smile is what you sell \nYou prom" +
                     "ise me heaven then put me through hell \nChains of love, got a hol" +
@@ -638,6 +660,7 @@ const artists: Artist[] = [
                 "id": "22",
                 "name": "De donde vengo yo",
                 "duration": 106,
+                "hash": "U49=BJ;PBlw{9^$i{$w{9_Nb65R+FGJ*S#OC",
                 "lyrics": "De donde vengo yo \nLa cosa no es fácil pero siempre igual " +
                     "sobrevivimos \nVengo yo \nDe tanto luchar siempre con la nuestra " +
                     "nos salimos \nVengo yo \nY aquí se habla mal pero todo está mucho" +
@@ -731,6 +754,7 @@ const artists: Artist[] = [
                 "id": "23",
                 "name": "Hasta el techo",
                 "duration": 191,
+                "hash": "U76*wZT000RMw[n$NfbH0Kr=~Co~I^W?-Ti]",
                 "lyrics": "Oye.. \ncómo.. \noye.. \n\nMis días a tu lado nunca han sido" +
                     " grises \nme gustan tus colores, todos tus matices \nandar por tu " +
                     "silencio sin poder sentirte \nnos sobran las palabras, somos tan f" +
@@ -772,6 +796,7 @@ export type TrackByArtist = {
     id: string;
     artist: string;
     track: string;
+    hash: string;
 }
 
 export async function getTrackByArtist(): Promise<TrackByArtist[]> {
@@ -782,6 +807,7 @@ export async function getTrackByArtist(): Promise<TrackByArtist[]> {
                 id: track.id,
                 track: track.name,
                 artist: artist.name,
+                hash: track.hash,
             })
         }
     }

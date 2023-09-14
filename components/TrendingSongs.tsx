@@ -1,5 +1,6 @@
 import {TrackByArtist} from "../lib/artists";
 import {useRouter} from "next/router";
+import {BlurhashCanvas} from "react-blurhash";
 
 type Props = {
     tracks: TrackByArtist[]
@@ -18,7 +19,13 @@ export default function TrendingSongs({tracks}: Props) {
             <div className={"flex flex:col gap:1rem"}>
                 {tracks.map(track => (
                     <div className={"flex flex:row gap:1rem"} onClick={() => router.push("/sings/" + track.id)}>
-                        <div className={"min-w:7rem min-h:7rem bg:black r:1rem"}></div>
+                        <div className={"position:relative min-w:7rem min-h:7rem"}>
+                            <BlurhashCanvas
+                                className={"r:1rem position:absolute top:0 left:0 right:0 bottom:0 w:100% h:100%"}
+                                hash={track.hash}
+                                punch={1} />
+                        </div>
+
                         <div className={"flex flex:col"}>
                             <h4 className={"line-height:1.2rem mb:0.5rem"}>{track.track}</h4>
                             <p>{track.artist} - Soundtrack</p>
